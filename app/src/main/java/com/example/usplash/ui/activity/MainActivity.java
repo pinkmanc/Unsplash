@@ -14,7 +14,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 
-import com.example.unsplash.R;
+import com.example.upsplash.R;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private TextView tv_nav_title;
     private ConstraintLayout drawer_layout_main_content;
 
-    private FragmentManager mFgManager;
+    private FragmentManager fgManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer_layout_main_content = findViewById(R.id.drawer_layout_main_content);
         setSupportActionBar(toolbar);
         drawer_layout_nav.setItemIconTintList(null);
+        drawer_layout_nav.setNavigationItemSelectedListener(this);
+
 
 
 
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
+
 
         }
 
