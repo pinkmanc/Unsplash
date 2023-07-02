@@ -1,4 +1,4 @@
-package com.example.drysister;
+package com.example.unsplash;
 
 import org.junit.Test;
 
