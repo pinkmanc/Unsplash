@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.drysister'
+    namespace 'com.example.unsplash'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.drysister"
+        applicationId "com.example.upsplash"
         minSdk 30
         targetSdk 33
         versionCode 1
