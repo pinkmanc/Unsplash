@@ -1,4 +1,4 @@
-package com.example.drysister.ui.activity;
+package com.example.usplash.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.drysister.R;
+import com.example.unsplash.R;
+
 
 /**
  * 描述:splash闪屏页

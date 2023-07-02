@@ -15,9 +15,10 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
 
+
         <activity
             android:exported="true"
-            android:name=".ui.activity.SplashActivity"
+            android:name="com.example.usplash.ui.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ActionBarFullScreen">
 
@@ -29,7 +30,7 @@
         </activity>
 
         <activity
-            android:name=".ui.activity.MainActivity"
+            android:name="com.example.usplash.ui.activity.MainActivity"
             android:screenOrientation="portrait" />
     </application>
 
