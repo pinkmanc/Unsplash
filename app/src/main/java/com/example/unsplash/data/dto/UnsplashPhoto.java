@@ -1,4 +1,4 @@
-package com.example.usplash.data.dto;
+package com.example.unsplash.data.dto;
 
 public class UnsplashPhoto {
     private String _id;

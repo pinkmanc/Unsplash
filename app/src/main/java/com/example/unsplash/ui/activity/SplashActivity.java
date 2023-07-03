@@ -1,4 +1,4 @@
-package com.example.usplash.ui.activity;
+package com.example.unsplash.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;

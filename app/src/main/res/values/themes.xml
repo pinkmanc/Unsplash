@@ -5,7 +5,7 @@
         <item name="colorPrimary">#F44336</item>
         <item name="colorAccent">@color/colorPrimaryDark</item>
         <item name="android:textColorPrimary">@color/bar_font</item>
-        <item name="actionBarSize">56dp</item>
+        <item name="actionBarSize">56sp</item>
 
     </style>
 
@@ -23,6 +23,9 @@
 
     <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
         <item name="actionMenuTextColor">@color/bar_font</item>
+        <item name="titleTextAppearance">@style/MyTitleTextStyle</item>
+    </style>
+    <style name="MyTitleTextStyle" parent="@android:style/TextAppearance">
         <item name="android:textSize">18sp</item>
     </style>
 

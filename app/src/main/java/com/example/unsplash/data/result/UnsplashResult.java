@@ -1,6 +1,6 @@
-package com.example.usplash.data.result;
+package com.example.unsplash.data.result;
 
-import com.example.usplash.data.dto.UnsplashPhoto;
+import com.example.unsplash.data.dto.UnsplashPhoto;
 
 import java.util.ArrayList;
 

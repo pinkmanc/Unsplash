@@ -1,4 +1,4 @@
-package com.example.usplash.ui.fragment;
+package com.example.unsplash.ui.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,16 +15,19 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.example.upsplash.R;
 import com.google.android.material.tabs.TabLayout;
+
+import org.jetbrains.annotations.Contract;
+
 import io.reactivex.disposables.CompositeDisposable;
 
-public class LittlePhotoFragment extends Fragment {
+public class LittleUnsplashFragment extends Fragment {
     private Context mContext;
     private TabLayout tl_little_unsplash;
     private ViewPager vp_content;
     protected CompositeDisposable mSubscriptions;
 
-    public static LittlePhotoFragment newInstance(){
-        LittlePhotoFragment fragment =new LittlePhotoFragment();
+    public static LittleUnsplashFragment newInstance(){
+        LittleUnsplashFragment fragment =new LittleUnsplashFragment();
         return fragment;
     }
 
@@ -61,6 +64,8 @@ public class LittlePhotoFragment extends Fragment {
             super(fm);
         }
 
+        @NonNull
+        @Contract("_ -> new")
         @Override
         public Fragment getItem(int position) {
             return UnsplashPTFragment.newInstance();

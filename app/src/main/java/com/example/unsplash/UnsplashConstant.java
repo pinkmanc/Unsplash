@@ -1,4 +1,4 @@
-package com.example.usplash;
+package com.example.unsplash;
 
 public class UnsplashConstant {
     public final static String FG_LITTLE_PHOTO = "FG_LITTLE_PHOTO";

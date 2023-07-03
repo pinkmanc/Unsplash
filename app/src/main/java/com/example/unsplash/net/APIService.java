@@ -1,16 +1,15 @@
-package com.example.usplash.net;
+package com.example.unsplash.net;
 
-import com.example.usplash.UnsplashInit;
-import com.example.usplash.data.result.UnsplashResult;
+import com.example.unsplash.UnsplashInit;
+import com.example.unsplash.data.result.UnsplashResult;
 
 import io.reactivex.Flowable;
-import io.reactivex.plugins.RxJavaPlugins;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import retrofit2.http.GET;
-import retrofit2.http.PATCH;
+import retrofit2.http.Header;
 import retrofit2.http.Query;
 
 /**
@@ -19,7 +18,7 @@ import retrofit2.http.Query;
  * @author pinkmanc on 2023/7/2 20:42
  */
 public class APIService {
-    private static String BASE_URL = "https://unsplash.com/";
+    private static String BASE_URL = "https://api.unsplash.com/";
     public APIs apis;
     private static APIService instance;
     public static APIService getInstance(){
@@ -39,10 +38,10 @@ public class APIService {
     }
     public interface APIs{
         /* Unsplash.com 图片*/
-        @GET("https://unsplash.com/")
+        @GET("https://api.unsplash.com/photos/random/")
         Flowable<UnsplashResult> fetchUnsplashPT(
-                @Query("count") int count,
-                @Query("page") int page
+                @Header("Authorization") String apiKey,
+                @Query("count") int count
         );
     }
 }

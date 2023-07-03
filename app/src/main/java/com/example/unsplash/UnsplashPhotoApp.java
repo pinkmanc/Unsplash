@@ -1,8 +1,12 @@
-package com.example.usplash;
+package com.example.unsplash;
 
 import android.app.Application;
 
-import com.example.usplash.data.dto.UnsplashPhoto;
+/**
+ *  描述: Application类
+ *
+ * @author pinkmanc on 2023/7/3 20:34
+ */
 
 public class UnsplashPhotoApp extends Application {
 

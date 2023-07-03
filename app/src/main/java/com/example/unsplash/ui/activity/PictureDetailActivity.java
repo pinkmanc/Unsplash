@@ -1,4 +1,4 @@
-package com.example.usplash.ui.activity;
+package com.example.unsplash.ui.activity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide;
 import com.example.upsplash.R;
 import com.r0adkll.slidr.Slidr;
 
-public class PictureDetailAcivity extends AppCompatActivity {
+public class PictureDetailActivity extends AppCompatActivity {
     private ImageView img_picture;
     private String picUrl;
 

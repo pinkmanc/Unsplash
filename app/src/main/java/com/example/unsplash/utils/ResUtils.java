@@ -1,6 +1,6 @@
-package com.example.usplash.utils;
+package com.example.unsplash.utils;
 
-import com.example.usplash.UnsplashPhotoApp;
+import com.example.unsplash.UnsplashPhotoApp;
 
 public class ResUtils {
     public static String getString(int strId) {

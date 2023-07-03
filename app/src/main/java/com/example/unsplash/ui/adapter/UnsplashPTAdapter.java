@@ -1,4 +1,4 @@
-package com.example.usplash.ui.adapter;
+package com.example.unsplash.ui.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.upsplash.R;
-import com.example.usplash.data.dto.UnsplashPhoto;
+import com.example.unsplash.data.dto.UnsplashPhoto;
+import com.example.unsplash.ui.activity.PictureDetailActivity;
 
 import java.util.ArrayList;
 
@@ -20,21 +21,21 @@ import java.util.ArrayList;
 public class UnsplashPTAdapter extends RecyclerView.Adapter<UnsplashPTAdapter.ViewHolder> {
 
     private Context mContext;
-    private ArrayList<UnsplashPhoto> mzs = new ArrayList<>();
+    private ArrayList<UnsplashPhoto> pts = new ArrayList<>();
 
-    public UnsplashPTAdapter(Context mContext, ArrayList<UnsplashPhoto> mzs) {
+    public UnsplashPTAdapter(Context mContext, ArrayList<UnsplashPhoto> pts) {
         this.mContext = mContext;
-        this.mzs = mzs;
+        this.pts = pts;
     }
 
     public void addAll(ArrayList<UnsplashPhoto> data) {
-        mzs.clear();
-        mzs.addAll(data);
+        pts.clear();
+        pts.addAll(data);
         notifyDataSetChanged();
     }
 
     public void loadMore(ArrayList<UnsplashPhoto> data) {
-        mzs.addAll(data);
+        pts.addAll(data);
     }
 
     @Override
@@ -44,12 +45,12 @@ public class UnsplashPTAdapter extends RecyclerView.Adapter<UnsplashPTAdapter.Vi
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.bind(mzs.get(position));
+        holder.bind(pts.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return mzs.size();
+        return pts.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {

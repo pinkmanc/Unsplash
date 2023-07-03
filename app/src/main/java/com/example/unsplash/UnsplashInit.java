@@ -1,10 +1,14 @@
-package com.example.usplash;
+package com.example.unsplash;
 
 import android.app.Application;
+
+import com.r0adkll.slidr.BuildConfig;
 
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
+import timber.log.Timber;
 
 public class UnsplashInit {
     private static Long  HTTP_CONNECT_TIMEOUT = 30L;
